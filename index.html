@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <style>
+    /* CSS styles for the profile page */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    .profile-picture {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile-info {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+    }
+    .profile-info h2 {
+      margin-top: 0;
+    }
+    .profile-info p {
+      line-height: 1.5;
+    }
+    .dark-mode {
+      background-color: #333; /* set dark background color */
+      color: #000000; /* set dark text color */
+    }
+    button {
+      padding: 10px;
+      background-color: #ccc;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Profile</h1>
+  <img class="profile-picture" src="/profile.jpg" alt="My Profile Picture">
+  <div class="profile-info">
+    <h2>John Doe</h2>
+    <p><strong>Age:</strong> 30</p>
+    <p>
+        Lionel Messi is a professional footballer from Argentina, widely regarded as one of the greatest players of all time. He was born on June 24, 1987, in Rosario, Argentina. Messi began playing football at a young age and joined the youth team of his local club, Newell's Old Boys, when he was just six years old.
+    </p>
+    <audio controls>
+        <source src="/profile_a.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
